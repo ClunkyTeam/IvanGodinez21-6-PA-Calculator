@@ -3,229 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calculator.MainPage">
 
-    <StackLayout BackgroundColor="Black">
-        <Frame BackgroundColor="DarkGray" Padding="24" CornerRadius="0">
-            <Label Text="0" HorizontalTextAlignment="End" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Grid Padding="20" ColumnDefinitions="Auto, Auto, Auto" RowDefinitions="Auto, Auto">
-            <Button
-                Grid.Row="1"
-                Grid.Column="1"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                Text="C"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="2"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="+/-"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="3"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="%"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="4"
-                BackgroundColor="Orange"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="DIV"
-                TextColor="White"
-                WidthRequest="100" 
-            />
-        </Grid>
-        <Grid Padding="20" ColumnDefinitions="Auto, Auto, Auto" RowDefinitions="Auto, Auto">
-            <Button
-                Grid.Row="1"
-                Grid.Column="1"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                Text="7"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="2"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="8"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="3"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="9"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="4"
-                BackgroundColor="Orange"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="X"
-                TextColor="White"
-                WidthRequest="100" 
-            />
-        </Grid>
-        <Grid Padding="20" ColumnDefinitions="Auto, Auto, Auto" RowDefinitions="Auto, Auto">
-            <Button
-                Grid.Row="1"
-                Grid.Column="1"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                Text="4"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="2"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="5"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="3"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="6"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="4"
-                BackgroundColor="Orange"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="-"
-                TextColor="White"
-                WidthRequest="100" 
-            />
-        </Grid>
-        <Grid Padding="20" ColumnDefinitions="Auto, Auto, Auto" RowDefinitions="Auto, Auto">
-            <Button
-                Grid.Row="1"
-                Grid.Column="1"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                Text="1"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="2"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="2"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="3"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="3"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="4"
-                BackgroundColor="Orange"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="+"
-                TextColor="White"
-                WidthRequest="100" 
-            />
-        </Grid>
-        <Grid Padding="20" ColumnDefinitions="Auto, Auto, Auto" RowDefinitions="Auto, Auto">
-            <Button
-                Grid.Row="1"
-                Grid.Column="1"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                WidthRequest="180"
-                HeightRequest="70"
-                Text="0"
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="2"
-                BackgroundColor="White"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="."
-                TextColor="Black"
-            />
-            <Button
-                Grid.Row="1"
-                Grid.Column="3"
-                BackgroundColor="Orange"
-                FontAttributes="Bold"
-                FontSize="16"
-                HeightRequest="70"
-                HorizontalOptions="Start"
-                Text="="
-                TextColor="White"
-            />
-        </Grid>
-    </StackLayout>
+    <StackLayout BackgroundColor="#24252a">
+        <StackLayout>
+            <Label Text="0" HorizontalTextAlignment="End" Padding="20" TextColor="#eeeeee" FontSize="36"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical"  Margin="0">
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" HeightRequest="135">
+                    <Button Text="C" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="+/-" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="%" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="/" TextColor="#eeeeee" BackgroundColor="#e9ad01" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                </StackLayout>
 
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" HeightRequest="135">
+                    <Button Text="9" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="8" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="7" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="*" TextColor="#eeeeee" BackgroundColor="#e9ad01" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" HeightRequest="135">
+                    <Button Text="6" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="5" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="4" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="-" TextColor="#eeeeee" BackgroundColor="#e9ad01" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" HeightRequest="135">
+                    <Button Text="3" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="2" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="1" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                    <Button Text="+" TextColor="#eeeeee" BackgroundColor="#e9ad01" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" HeightRequest="135">
+                    <Button Text="0" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title"></Button>
+                    <Button Text="." TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="Center" WidthRequest="98" FontSize="Title"></Button>
+                    <Button Text="=" TextColor="#eeeeee" BackgroundColor="#e9ad01" HorizontalOptions="End" WidthRequest="99" FontSize="Title"></Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>
