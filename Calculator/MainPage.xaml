@@ -3,46 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calculator.MainPage">
 
-    <StackLayout BackgroundColor="#24252a">
-        <StackLayout>
-            <Label Text="0" HorizontalTextAlignment="End" Padding="20" TextColor="#eeeeee" FontSize="36"/>
-        </StackLayout>
-        <StackLayout VerticalOptions="FillAndExpand">
-            <StackLayout Orientation="Vertical"  Margin="0">
-                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" HeightRequest="135">
-                    <Button Text="C" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="+/-" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="%" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="/" TextColor="#eeeeee" BackgroundColor="#e9ad01" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                </StackLayout>
+    <ContentPage.Content>
 
-                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" HeightRequest="135">
-                    <Button Text="9" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="8" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="7" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="*" TextColor="#eeeeee" BackgroundColor="#e9ad01" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                </StackLayout>
-
-                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" HeightRequest="135">
-                    <Button Text="6" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="5" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="4" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="-" TextColor="#eeeeee" BackgroundColor="#e9ad01" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                </StackLayout>
-
-                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" HeightRequest="135">
-                    <Button Text="3" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="2" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="1" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                    <Button Text="+" TextColor="#eeeeee" BackgroundColor="#e9ad01" HorizontalOptions="FillAndExpand" FontSize="Title" WidthRequest="50" HeightRequest="50"></Button>
-                </StackLayout>
-
-                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" Spacing="1" Padding="-2" HeightRequest="135">
-                    <Button Text="0" TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="FillAndExpand" FontSize="Title"></Button>
-                    <Button Text="." TextColor="#2f2f2f" BackgroundColor="#eeeeee" HorizontalOptions="Center" WidthRequest="98" FontSize="Title"></Button>
-                    <Button Text="=" TextColor="#eeeeee" BackgroundColor="#e9ad01" HorizontalOptions="End" WidthRequest="99" FontSize="Title"></Button>
-                </StackLayout>
-            </StackLayout>
-        </StackLayout>
-    </StackLayout>
+        <Grid BackgroundColor="#24252a" RowSpacing="1.5" ColumnSpacing="1.5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Label 
+                Grid.RowSpan="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="End"
+                VerticalOptions="FillAndExpand"
+                FontSize="60"
+                BackgroundColor="#24252a"
+                TextColor="#eeeeee"
+                Text="0"
+             />
+            <Button Grid.Row="1" Text="C" FontSize="Title" Grid.Column="0" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="1" Text="+/-" FontSize="Title" Grid.Column="1" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="1" Text="%" FontSize="Title" Grid.Column="2" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="1" Text="/" FontSize="Title" Grid.Column="3" BackgroundColor="#e9ad01" TextColor="#eeeeee"/>
+            <Button Grid.Row="2" Text="7" FontSize="Title" Grid.Column="0" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="2" Text="8" FontSize="Title" Grid.Column="1" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="2" Text="9" FontSize="Title" Grid.Column="2" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="2" Text="X" FontSize="Title" Grid.Column="3" BackgroundColor="#e9ad01" TextColor="#eeeeee"/>
+            <Button Grid.Row="3" Text="4" FontSize="Title" Grid.Column="2" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="3" Text="5" FontSize="Title" Grid.Column="0" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="3" Text="6" FontSize="Title" Grid.Column="1" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="3" Text="-" FontSize="Title" Grid.Column="3" BackgroundColor="#e9ad01" TextColor="#eeeeee"/>
+            <Button Grid.Row="4" Text="1" FontSize="Title" Grid.Column="2" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="4" Text="2" FontSize="Title" Grid.Column="0" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="4" Text="3" FontSize="Title" Grid.Column="1" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="4" Text="+" FontSize="Title" Grid.Column="3" BackgroundColor="#e9ad01" TextColor="#eeeeee"/>
+            <Button Grid.Row="5" Text="." FontSize="Title" Grid.Column="2" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="5" Text="0" FontSize="Title" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#eeeeee"/>
+            <Button Grid.Row="5" Text="=" FontSize="Title" Grid.Column="3" BackgroundColor="#e9ad01" TextColor="#eeeeee"/>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
